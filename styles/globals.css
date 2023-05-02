@@ -1,27 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*>*{
+  font-family: 'Poppins', sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer utilities{
+    .container{
+    margin: 90vw; 
+    max-width: 1395px; 
+    margin: 0 auto;
+   
+    }
+
+}
+.nav{
+  display:flex;
+  justify-content: space-between;
+  padding: 0.7rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.links{
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.link_btn{
+  padding: 0.3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: green;
+  color: white;
+  border-radius: 0.3rem;
+  margin-top: 66rem;
+}
+
+
+/* *************Testimonial *************/
+.Testimonial{
+  width: 50rem;
+  margin-inline: auto;
+  
+  
+}
+.test-header{
+  justify-content: center;
+}
+
+.card-testi{
+  position: relative;
+   /* background:  rgb(39,35,89);; */
+  cursor: pointer;
+   border-radius: 0 3rem 0 3rem;
+  padding: 1rem;
+  text-align: left;
+  margin-top: 5rem;
+  border: 2px solid transparent;
+      border-radius: 0 3rem 0 3rem;
+  border-color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.test-avatar{
+  
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: absolute;
+  
+  top: -2rem;
+  transition: ease-out;
+  left: calc(50% - 2rem);
+  /* box-shadow: 0 1.5rem 2rem rgb(39,35,89);; ; */
+}
+
+/* .Testimonial:hover .card-testi{
+    border-radius: 0 3rem 0 3rem;
+  border-color: rgb(0, 0, 0);
+  background-color: transparent;
+} */
+
+.test-quote{
+  font-size: 1.5rem;
+  font-style: italic;
+  color: rgb(2, 0, 0);
+  margin-top:  1rem;
+}
+
+.testimonails-btncontainer{
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+ 
+}
+
+.test-btn{
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.test-btn svg{
+  fill: rgb(0,125,241); 
+  font-size: 1.8rem;
+  height: 3rem;
+  width: 3rem;
+
+}
+
+
+
+
+.team-container{
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  color: black;
+  gap: 2rem;
+  margin-top: 4rem;
+
+
+}
+.team-card{
+   border-radius: 0 3rem 0 3rem;
+ /* background-color: rgb(21, 214, 21); */
+  border: 0.1px solid transparent;
+  padding: 2rem;
+  padding-top: 3.5rem;
+  text-align: center;
+  margin-top: 3rem;
+    background: transparent;
+  cursor: default;
+  border-color: rgb(190, 190, 190);
+}
+
+/* .team-card:hover{
+  background: transparent;
+  cursor: default;
+  border-color: rgb(190, 190, 190);
+} */
+
+.timg{
+  width: 85%;
+  overflow: hidden;
+  border-radius: 1rem;
+  
+}
+
+/****************** Footer **************************/
+
+.footer{
+  
+  display: grid;
+  grid-template-columns: 26rem 1fr 1fr 1fr;
+  gap: 3rem;
+   margin: 90vw; 
+    max-width: 1395px; 
+    margin: 0 auto; 
+  color: white;
+ 
+}
+.footer-container{
+  padding: 1rem;
+  margin-top: 5rem;
+   background: rgb(59, 212, 128); 
+}
+
+.anchor{
+     display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color:black;
+}
+
+.para-footer{
+   color:black;
+}
+
+.socialmed{
+ display: flex;
+ gap: 1rem;
+ align-items: center;
+
+}
+
+.socialmed>a{
+  background-color:rgb(231, 230, 230); 
+  padding: 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  transition: ease-in-out;
+  font-size: 2rem;
+}
+
+.socialmed a:hover{
+    color: rgb(231, 230, 230);
+   background: transparent;
+}
+.socialmed a svg{
+  color: rgb(43, 42, 42);
+
+}
+
+.footer-copy{
+  text-align: center;
+  border-top: 2px solid ghostwhite;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  color: white;
+
+}
+
+@media  (max-width: 600px) {
+    .Testimonial{
+  width: 90%;
+  padding: 1rem;
+  
+  
+}
+
+.team-container{
+  padding: 1rem;
+  grid-template-columns: repeat(1,1fr);
+   gap: 2rem;
+
+}
 }
