@@ -1,36 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-
-*>*{
-  font-family: 'Poppins', sans-serif;
+* > * {
+  font-family: "Poppins", sans-serif;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    .container{
-    margin: 90vw; 
-    max-width: 1395px; 
+@layer utilities {
+  .container {
+    margin: 90vw;
+    max-width: 1395px;
     margin: 0 auto;
-   
-    }
-
+  }
 }
-.nav{
-  display:flex;
+.nav {
+  display: flex;
   justify-content: space-between;
   padding: 0.7rem;
 }
 
-.links{
+.links {
   padding: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
-.link_btn{
+.link_btn {
   padding: 0.3rem;
   font-weight: 400;
   font-size: 1.2rem;
@@ -40,40 +37,40 @@
   margin-top: 66rem;
 }
 
+.toggle-btn {
+  display: none;
+}
 
 /* *************Testimonial *************/
-.Testimonial{
+.Testimonial {
   width: 50rem;
   margin-inline: auto;
-  
-  
 }
-.test-header{
+.test-header {
   justify-content: center;
 }
 
-.card-testi{
+.card-testi {
   position: relative;
-   /* background:  rgb(39,35,89);; */
+  /* background:  rgb(39,35,89);; */
   cursor: pointer;
-   border-radius: 0 3rem 0 3rem;
+  border-radius: 0 3rem 0 3rem;
   padding: 1rem;
   text-align: left;
   margin-top: 5rem;
   border: 2px solid transparent;
-      border-radius: 0 3rem 0 3rem;
+  border-radius: 0 3rem 0 3rem;
   border-color: rgb(0, 0, 0);
   background-color: transparent;
 }
 
-.test-avatar{
-  
+.test-avatar {
   width: 4rem;
   height: 4rem;
   border-radius: 1.5rem;
   overflow: hidden;
   position: absolute;
-  
+
   top: -2rem;
   transition: ease-out;
   left: calc(50% - 2rem);
@@ -86,59 +83,51 @@
   background-color: transparent;
 } */
 
-.test-quote{
+.test-quote {
   font-size: 1.5rem;
   font-style: italic;
   color: rgb(2, 0, 0);
-  margin-top:  1rem;
+  margin-top: 1rem;
 }
 
-.testimonails-btncontainer{
-    width: fit-content;
-    margin: 2.5rem auto 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    
- 
+.testimonails-btncontainer {
+  width: fit-content;
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.test-btn{
+.test-btn {
   background: transparent;
   cursor: pointer;
   border: none;
 }
 
-.test-btn svg{
-  fill: rgb(0,125,241); 
+.test-btn svg {
+  fill: rgb(125, 212, 53);
   font-size: 1.8rem;
   height: 3rem;
   width: 3rem;
-
 }
 
-
-
-
-.team-container{
-  margin: 0 auto; 
+.team-container {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   color: black;
   gap: 2rem;
   margin-top: 4rem;
-
-
 }
-.team-card{
-   border-radius: 0 3rem 0 3rem;
- /* background-color: rgb(21, 214, 21); */
+.team-card {
+  border-radius: 0 3rem 0 3rem;
+  /* background-color: rgb(21, 214, 21); */
   border: 0.1px solid transparent;
   padding: 2rem;
   padding-top: 3.5rem;
   text-align: center;
   margin-top: 3rem;
-    background: transparent;
+  background: transparent;
   cursor: default;
   border-color: rgb(190, 190, 190);
 }
@@ -149,89 +138,153 @@
   border-color: rgb(190, 190, 190);
 } */
 
-.timg{
+.timg {
   width: 85%;
   overflow: hidden;
   border-radius: 1rem;
-  
 }
 
 /****************** Footer **************************/
 
-.footer{
-  
+.footer {
   display: grid;
   grid-template-columns: 26rem 1fr 1fr 1fr;
   gap: 3rem;
-   margin: 90vw; 
-    max-width: 1395px; 
-    margin: 0 auto; 
+  margin: 90vw;
+  max-width: 1495px;
+  margin: 0 auto;
   color: white;
- 
 }
-.footer-container{
+.footer-container {
   padding: 1rem;
   margin-top: 5rem;
-   background: rgb(59, 212, 128); 
+  background: rgb(59, 212, 128);
 }
 
-.anchor{
-     display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    color:black;
+.anchor {
+  display: block;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
-.para-footer{
-   color:black;
+.para-footer {
+  color: black;
+  font-size: 24px;
 }
 
-.socialmed{
- display: flex;
- gap: 1rem;
- align-items: center;
-
+.socialmed {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.socialmed>a{
-  background-color:rgb(231, 230, 230); 
+.socialmed > a {
+  background-color: rgb(231, 230, 230);
   padding: 0.4rem;
   border: 1px solid transparent;
   border-radius: 0.6rem;
   transition: ease-in-out;
   font-size: 2rem;
+  margin-top: 2.5rem;
 }
 
-.socialmed a:hover{
-    color: rgb(231, 230, 230);
-   background: transparent;
+.socialmed a:hover {
+  color: rgb(231, 230, 230);
+  background: transparent;
 }
-.socialmed a svg{
+.socialmed a svg {
   color: rgb(43, 42, 42);
-
 }
 
-.footer-copy{
+.footer-copy {
   text-align: center;
   border-top: 2px solid ghostwhite;
   padding: 1.5rem 0;
   margin-top: 3rem;
-  color: white;
-
+  color: black;
 }
 
-@media  (max-width: 600px) {
-    .Testimonial{
-  width: 90%;
-  padding: 1rem;
-  
-  
-}
+@media (max-width: 600px) {
+  .Testimonial {
+    width: 90%;
+    padding: 1rem;
+  }
 
-.team-container{
-  padding: 1rem;
-  grid-template-columns: repeat(1,1fr);
-   gap: 2rem;
+  .team-container {
+    padding: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+    text-align: center;
+  }
 
-}
+  .Nav-link > ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100% auto;
+    height: 100%;
+    margin-top: -10rem;
+    margin-left: 100px;
+  }
+
+  .Nav-link > ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100% auto;
+    height: 100%;
+    margin-top: -6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Nav-link {
+    display: none;
+    position: fixed;
+    top: 170px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    overflow: hidden;
+    background: white;
+    border-bottom-right-radius: 60px;
+    transition: all 0.5s ease;
+    z-index: 9;
+  }
+
+  .anchor {
+    padding: 8px 8px 8px 64px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .anchor:hover {
+    text-decoration: underline;
+  }
+  .showNav {
+    display: flex;
+  }
+
+  .hideNar {
+    display: none;
+  }
+
+  .toggle-btn {
+    font-size: 3.1rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    color: black;
+    transition: 0.25s ease;
+    background: transparent;
+    border: none;
+    display: initial;
+  }
 }

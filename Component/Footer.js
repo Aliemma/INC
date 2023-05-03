@@ -80,19 +80,19 @@ const Footer = () => {
                 </div>
             
                 <div className="col-2">
-                    <h4>Permalinks</h4>
+                    <h4 className="text-3xl text-black">Permalinks</h4>
                     
-                     <Link className="anchor"href="/About"  >About</Link>
+                        <Link className="anchor"href="/About"  >About</Link>
                         <Link className="anchor" href="/Service"  >Service</Link>
                         <Link className="anchor" href="/OurTeam" >Our Team</Link>
                         <Link className="anchor" href="/Gallery" >Gallery</Link>
-                    <Link className="anchor" href="/Blog" >Blog</Link>
+                       <Link className="anchor" href="/Blog" >Blog</Link>
                        <Link className="anchor" href="/Cpd" >Sign Up</Link>
 
                 </div>
 
                 <div className="col-3">
-                    <h4>Insights</h4>
+                    <h4 className="text-3xl text-black">Insights</h4>
                  <Link className="anchor" href="/About"  >Contact Us</Link>
                     <Link className="anchor"  href="/Service"  >Privacy Policy</Link>
                    <Link className="anchor" href="/OurTeam" >How It Works</Link>
@@ -103,7 +103,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col-4">
-                    <h4>Get In Touch</h4>
+                    <h4 className="text-3xl text-black">Get In Touch</h4>
               <Link className="anchor" href="/About"  >Contact Us</Link>
                    <Link className="anchor"  href="/Service"  >Privacy Policy</Link>
                     <Link className="anchor" href="/OurTeam" >How It Works</Link>
@@ -115,7 +115,7 @@ const Footer = () => {
                 </div>
             </div>
            <div className="footer-copy">
-            <small>2022 Ali Emmanuel &copy; All Rights Reserved</small>
+            <small className="text-2xl">2023 Impact Nutrition Consult &copy; All Rights Reserved</small>
            </div>
         </div>
     )
