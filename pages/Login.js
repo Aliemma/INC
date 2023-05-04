@@ -1,9 +1,7 @@
 export default function Login() {
   return (
-    <div>
-     
-  <h1>CPD</h1>
-      
+    <div className="min-h-screen py-40 bg-gradient-to-r from-green to-green'" >
+      <p>hbhjbj</p>
     </div>
   )
 }

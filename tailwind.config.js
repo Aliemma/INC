@@ -10,10 +10,10 @@ module.exports = {
   ],
   theme: {
        colors: {
-      'green': " #289b26;",
-      "light-blue": "rgb(63,180,249)",
+      'green': " #289B26;",
+      "light-green": "5BAD34",
       'black': "rgb(17,25,40)",
-      "light-black": "rgb(16,23,42)",
+      "light-gradient-green": "289B26",
       
     
     },
